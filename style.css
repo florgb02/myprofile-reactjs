@@ -1,0 +1,63 @@
+.navbar-default {
+  background: #A3D1CA !important; }
+  .navbar-default .navbar-brand {
+    color: #fff; }
+  .navbar-default .navbar-default .navbar-toggle, .navbar-default .navbar-default .icon-bar {
+    color: #fff !important; }
+  .navbar-default .navbar-default .navbar-nav li a:focus, .navbar-default .navbar-default .navbar-nav li a:hover {
+    color: #000; }
+  .navbar-default .navbar-nav > li > a {
+    color: #fff !important;
+    text-transform: uppercase;
+    font-size: 16px; }
+  .navbar-default .navbar-toggle {
+    background: #fff; }
+
+.container-main .left-container img {
+  width: 100%;
+  max-width: 300px; }
+
+.container-main .right-container ul.skills-list li {
+  width: 50%;
+  float: left;
+  line-height: 2;
+  text-transform: uppercase; }
+
+.container-main h1 {
+  font-size: 30px; }
+
+.container-main h2 {
+  color: #555;
+  border-bottom: 1px solid #ddd; }
+
+.container-main h3 {
+  font-size: 20px;
+  font-style: italic; }
+
+.container-main p {
+  font-size: 20px;
+  line-height: 1.8; }
+
+.container-main label.title {
+  font-size: 18px;
+  color: #999;
+  text-transform: uppercase;
+  margin-bottom: 15px; }
+
+.container-main .rm-padding {
+  padding-left: 0 !important;
+  padding-right: 0 !important; }
+
+footer {
+  clear: both;
+  background: #000; }
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .container-main .right-container ul.skills-list li {
+    width: 33%; } }
+
+/* Medium devices (desktops, 992px and up) */
+/* Large devices (large desktops, 1200px and up) */
