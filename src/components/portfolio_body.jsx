@@ -1,24 +1,16 @@
 var React = require('react');
+var RightContent = require('./right_section');
+
 
 module.exports = React.createClass({
 	getInitialState: function(){
 		return {
-			projects: []
+			 
 		}
 	},
 	render: function(){
 		return <div className="col-xs-12 rm-padding">
-			<div className="col-xs-12 col-lg-3 left-container">
-					<div className="col-xs-12">
-						<img src="/img/fgAvatar.svg" className="col-xs-12 img-circle "/>
-					</div>
-					<div className="col-xs-12 text-center">
-						<h1>Flor Guzman</h1>
-						<label className="title">Full Stack - Web Developer </label>
-					</div>
-					<hr className="col-xs-12 rm-padding" />
-
-			</div>
+			<RightContent />
 			
 			<div className="col-xs-12 col-lg-8 right-container">
 			{ this.getDescription() }
@@ -34,7 +26,23 @@ module.exports = React.createClass({
 		</div>
 	},
 	getPortfolioInfo: function(){
-		return <div className="col-xs-12">
+		console.log(this.props.projects);
+		if(!this.props.projects){
+			return <h4>
+				No Projects Added.
+			</h4>
+		}else{
+			var list = this.props.projects.map(function(projectsProps){
+		      console.log(projectsProps);
+		    });
+			
+
+		}
+		
+	},
+	renderListProjects: function(){
+		
+		/*return <div className="col-xs-12">
 			<div className="row">
 			  <div className="col-sm-6 col-md-4">
 			    <div className="thumbnail">
@@ -48,6 +56,6 @@ module.exports = React.createClass({
 			    </div>
 			  </div>
 			</div>
-		</div>
+		</div>*/
 	}
 });
