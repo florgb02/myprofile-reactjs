@@ -22,6 +22,7 @@ module.exports = React.createClass({
     <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul className="nav navbar-nav navbar-right">
         <li><Link to="about">About Me</Link></li>
+        <li><Link to="skills">Skills</Link></li>
         <li><Link to="portfolio">Portfolio</Link></li>
       </ul>
     </div>

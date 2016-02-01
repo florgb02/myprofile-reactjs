@@ -13,15 +13,29 @@
   .navbar-default .navbar-toggle {
     background: #fff; }
 
+.hr-content {
+  display: inline-block; }
+
 .container-main .left-container img {
   width: 100%;
-  max-width: 300px; }
+  max-width: 250px;
+  float: none; }
 
-.container-main .right-container ul.skills-list li {
-  width: 50%;
-  float: left;
-  line-height: 2;
-  text-transform: uppercase; }
+.container-main .right-container {
+  border-left: none; }
+  .container-main .right-container ul.skills-list li {
+    width: 50%;
+    float: left;
+    line-height: 2;
+    text-transform: uppercase; }
+  .container-main .right-container .thumbnail-wrapper {
+    margin: 30px 0px; }
+  .container-main .right-container .thumbnail {
+    border: none;
+    margin: 1rem; }
+    .container-main .right-container .thumbnail img {
+      max-width: 200px;
+      height: 62px; }
 
 .container-main h1 {
   font-size: 30px; }
@@ -56,8 +70,21 @@ footer {
 /* No media query since this is the default in Bootstrap */
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-  .container-main .right-container ul.skills-list li {
-    width: 33%; } }
+  .container-main .right-container {
+    border-left: 1px solid #ddd; }
+    .container-main .right-container ul.skills-list li {
+      width: 33%; }
+  .hr-content {
+    display: none; } }
 
 /* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .container-main .right-container {
+    border-left: 1px solid #ddd; }
+  .hr-content {
+    display: none; } }
+
 /* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .hr-content {
+    display: none; } }
