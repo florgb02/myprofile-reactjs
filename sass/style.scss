@@ -1,16 +1,33 @@
+
 $main-color: #A3D1CA;
 $main-color-light: rgba($main-color, 0.5);
 
+html, body {
+	height: 100%;
+}
+.wrapper {
+	min-height: 98%;
+	height: auto !important;
+	margin: 0 auto;
+}
 
 .navbar-default {
 	background: $main-color !important;
-	.navbar-brand{ color: #fff;}
+	.navbar-brand{ color: #fff; font-size: 25px; padding:11px 15px;}
 	.navbar-default {
 		.navbar-toggle, .icon-bar{ color: #fff !important;}
 		.navbar-nav li a:focus, .navbar-nav li a:hover{ color: #000;}
 	}
 	.navbar-nav>li>a{ color: #fff !important; text-transform: uppercase; font-size: 16px;}
-
+	i.fa.fa-angle-right{
+		margin-left: 3px;
+		font-size: 27px;
+	}
+	i.fa.fa-angle-left{
+		margin-right: 3px;
+		font-size: 27px;
+	}
+	
 	.navbar-toggle{ background: #fff;}
 }
 
@@ -23,6 +40,7 @@ $main-color-light: rgba($main-color, 0.5);
 	}
 	.right-container{
 		border-left: none;
+		height: 96%;
 		
 		ul.skills-list{
 			li{
@@ -49,7 +67,7 @@ $main-color-light: rgba($main-color, 0.5);
 	h1{ font-size: 30px;}
 	h2{ color: #555; border-bottom: 1px solid #ddd; }
 	h3{ font-size: 20px; font-style: italic; }
-	p{ font-size: 20px; line-height: 1.8; }
+	p{ font-size: 18px; line-height: 1.5; margin-top:15px; }
 	label.title{ font-size: 18px; color: #999; text-transform: uppercase; margin-bottom: 15px;}
 
 
@@ -59,10 +77,43 @@ $main-color-light: rgba($main-color, 0.5);
 	}
 }
 
-footer{
+.show_project_info{
+	opacity: 0.9;
+    background: #eee;
+    z-index: 999;
+}
+
+.footer{
+		height: 3em;
 		clear:both;
-		background: #000;
+		background: $main-color;
+		padding: 10px;
+
+		p{ color: #fff; font-size:16px; text-align: center; margin:0;}
 	}
+
+
+.hold{
+	position: absolute;
+    width: 200px;
+    height: 200px;
+    clip: rect(0px,200px,200px,100px);
+    left: 300px;
+}
+
+.chart{
+	img{ width:100%;}
+}
+
+.socialmedia{
+	margin: 40px; 
+	text-align:center;
+	a{ margin: 15px;}
+	i{ font-size: 5rem; color: #777; margin: 10px}
+	
+
+
+}
 
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */

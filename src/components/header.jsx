@@ -15,8 +15,9 @@ module.exports = React.createClass({
         <span className="icon-bar"></span>
         <span className="icon-bar"></span>
       </button>
-      <a className="navbar-brand" href="#">FG_<i className="fa fa-coffee"></i>
-</a>
+      <a className="navbar-brand" href="#">
+        <i className="fa fa-angle-left"></i>FG _ <i className="fa fa-coffee"></i> /<i className="fa fa-angle-right"></i>
+      </a>
     </div>
 
     <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">

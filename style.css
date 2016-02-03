@@ -1,7 +1,50 @@
+.piece1 .pie {
+  color: red;
+  -moz-transform: rotate(120deg);
+  -webkit-transform: rotate(120deg);
+  -o-transform: rotate(120deg);
+  transform: rotate(120deg); }
+
+.piece2 {
+  -moz-transform: rotate(120deg);
+  -webkit-transform: rotate(120deg);
+  -o-transform: rotate(120deg);
+  transform: rotate(120deg); }
+
+.piece2 .pie {
+  color: green;
+  -moz-transform: rotate(120deg);
+  -webkit-transform: rotate(120deg);
+  -o-transform: rotate(120deg);
+  transform: rotate(120deg); }
+
+.piece3 {
+  -moz-transform: rotate(240deg);
+  -webkit-transform: rotate(240deg);
+  -o-transform: rotate(240deg);
+  transform: rotate(120deg); }
+
+.piece3 .pie {
+  color: blue;
+  -moz-transform: rotate(120deg);
+  -webkit-transform: rotate(120deg);
+  -o-transform: rotate(120deg);
+  transform: rotate(120deg); }
+
+html, body {
+  height: 100%; }
+
+.wrapper {
+  min-height: 98%;
+  height: auto !important;
+  margin: 0 auto; }
+
 .navbar-default {
   background: #A3D1CA !important; }
   .navbar-default .navbar-brand {
-    color: #fff; }
+    color: #fff;
+    font-size: 25px;
+    padding: 11px 15px; }
   .navbar-default .navbar-default .navbar-toggle, .navbar-default .navbar-default .icon-bar {
     color: #fff !important; }
   .navbar-default .navbar-default .navbar-nav li a:focus, .navbar-default .navbar-default .navbar-nav li a:hover {
@@ -10,6 +53,12 @@
     color: #fff !important;
     text-transform: uppercase;
     font-size: 16px; }
+  .navbar-default i.fa.fa-angle-right {
+    margin-left: 3px;
+    font-size: 27px; }
+  .navbar-default i.fa.fa-angle-left {
+    margin-right: 3px;
+    font-size: 27px; }
   .navbar-default .navbar-toggle {
     background: #fff; }
 
@@ -22,7 +71,8 @@
   float: none; }
 
 .container-main .right-container {
-  border-left: none; }
+  border-left: none;
+  height: 96%; }
   .container-main .right-container ul.skills-list li {
     width: 50%;
     float: left;
@@ -49,8 +99,9 @@
   font-style: italic; }
 
 .container-main p {
-  font-size: 20px;
-  line-height: 1.8; }
+  font-size: 18px;
+  line-height: 1.5;
+  margin-top: 15px; }
 
 .container-main label.title {
   font-size: 18px;
@@ -62,9 +113,41 @@
   padding-left: 0 !important;
   padding-right: 0 !important; }
 
-footer {
+.show_project_info {
+  opacity: 0.9;
+  background: #eee;
+  z-index: 999; }
+
+.footer {
+  height: 3em;
   clear: both;
-  background: #000; }
+  background: #A3D1CA;
+  padding: 10px; }
+  .footer p {
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    margin: 0; }
+
+.hold {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  clip: rect(0px, 200px, 200px, 100px);
+  left: 300px; }
+
+.chart img {
+  width: 100%; }
+
+.socialmedia {
+  margin: 40px;
+  text-align: center; }
+  .socialmedia a {
+    margin: 15px; }
+  .socialmedia i {
+    font-size: 5rem;
+    color: #777;
+    margin: 10px; }
 
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */

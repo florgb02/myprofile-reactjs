@@ -4,18 +4,21 @@ var RightContent = require('./right_section');
 module.exports = React.createClass({
 
 	render: function(){
-		return <div className="col-xs-12 rm-padding">
+		return <div className="col-xs-12 rm-padding wrapper">
 			<RightContent />
 			<div className="col-xs-12 col-lg-8 right-container">
 				{ this.getDescription() }
 				{ this.getResumeInfo() }
+				{ this.getTechSkillsGraph()}
+				{ this.getChartImage() }
 			</div>
+
 		</div>
 	}, 
 	getDescription: function(){
 
 		return <div className="col-xs-12">
-			<p>Hi!, I am a highly motivated Web Developer with experience in creating high quality websites with 
+			<p>I am a highly motivated Web Developer with experience in creating high quality websites with 
 				robust functionality in a LAMP environment using mockups and turning them into working HTML/CSS/JS, 
 				developing responsive designs across all devices.
 			</p>
@@ -56,8 +59,20 @@ module.exports = React.createClass({
 					<li>GRUNT</li>
 					<li>GULP</li>
 					<li>Composer</li>
+					<li>PhoneGap</li>
 				</ul>
 			</div>
+		</div>
+	},
+	getTechSkillsGraph: function(){
+		return <div className="col-xs-12 chart">
+			<img  src="../../img/meta-chart-skills-2.svg" alt="Knowledge-%"/>
+		</div>
+	},
+	getChartImage: function(){
+		return <div className="col-xs-12 chart">
+			<h2>FrontEnd vs BackEnd</h2>
+			<img src="../../img/meta-chart.svg" alt="Knowledge-%"/>
 		</div>
 	}
 });

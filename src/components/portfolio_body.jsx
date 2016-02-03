@@ -5,11 +5,11 @@ var RightContent = require('./right_section');
 module.exports = React.createClass({
 	getInitialState: function(){
 		return {
-			 
+			 hover: false
 		}
 	},
 	render: function(){
-		return <div className="col-xs-12 rm-padding">
+		return <div className="col-xs-12 rm-padding wrapper">
 			<RightContent />
 			
 			<div className="col-xs-12 col-lg-9 right-container">
@@ -23,8 +23,8 @@ module.exports = React.createClass({
 	getDescription: function(){
 
 		return <div className="col-xs-12">
-			<p> List of websites!
-			</p>
+			<h2> As Seen On
+			</h2>
 		</div>
 	},
 	getProjectList: function(){
@@ -89,7 +89,7 @@ module.exports = React.createClass({
 			
 			var list = projects.map(function(item){
 		      return (
-					  <div className="col-sm-6 col-md-4 clear thumbnail-wrapper">
+					  <div className="col-sm-6 col-md-4 clear thumbnail-wrapper" onMouseLeave={this.handlerOnMouseLeave} onMouseEnter={this.handlerOnMouseEnter}>
 					    <div className="thumbnail">
 					    <a href={item.url} target="_blank">
 					      <img src={"/img/"+item.image_name} alt="..." className="image-settings"/>
@@ -99,26 +99,21 @@ module.exports = React.createClass({
 		     	)
 			});
 
-		    return list;
-		
-		
+		    return list;				
 	},
-	renderListProjects: function(){
-		
-		/*return <div className="col-xs-12">
-			<div className="row">
-			  <div className="col-sm-6 col-md-4">
-			    <div className="thumbnail">
-			      <img src="/img/default_post_img.png" alt="..." />
-			      <div className="caption">
-			        <h3>Thumbnail label</h3>
-			        <p>
-			        	<a href="#" className="btn btn-primary" role="button">One</a> 
-			        </p>
-			      </div>
-			    </div>
-			  </div>
-			</div>
-		</div>*/
+	handlerOnMouseEnter: function(){
+		this.setState({
+			hover: true
+		});
+
+		console.log(this.state.hover);
+
+	},
+	handlerOnMouseLeave: function(){
+		this.setState({
+			hover: false
+		});
+
+		console.log(this.state.hover);
 	}
 });
