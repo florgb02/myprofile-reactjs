@@ -10,7 +10,7 @@ html, body {
 	height: auto !important;
 	margin: 0 auto;
 }
-
+.image-settings{ width: 45%;}
 .navbar-default {
 	background: $main-color !important;
 	.navbar-brand{ color: #fff; font-size: 25px; padding:11px 15px;}
@@ -33,6 +33,7 @@ html, body {
 
 
 .hr-content{ display:inline-block;}
+.container{ width:100%;}
 
 .container-main{
 	.left-container{
@@ -40,7 +41,6 @@ html, body {
 	}
 	.right-container{
 		border-left: none;
-		height: 96%;
 		
 		ul.skills-list{
 			li{
@@ -60,15 +60,16 @@ html, body {
 			margin:1rem;
 			img{
 				max-width: 200px;
+				min-width: 190px;
 				height:62px;
 			}
 		}
 	}
-	h1{ font-size: 30px;}
-	h2{ color: #555; border-bottom: 1px solid #ddd; }
+	h1{     font-size: 45px; font-family: cursive}
+	h2{ color: #777; border-bottom: 1px solid #ddd; font-size: 28px; font-family: cursive;}
 	h3{ font-size: 20px; font-style: italic; }
 	p{ font-size: 18px; line-height: 1.5; margin-top:15px; }
-	label.title{ font-size: 18px; color: #999; text-transform: uppercase; margin-bottom: 15px;}
+	label.title{ font-size: 18px; color: #999; text-transform: uppercase; margin-bottom: 15px; font-family: monospace; }
 
 
 	.rm-padding{ 
@@ -84,10 +85,12 @@ html, body {
 }
 
 .footer{
-		height: 3em;
+		height: auto;
 		clear:both;
 		background: $main-color;
 		padding: 10px;
+		    margin-top: 2rem;
+		
 
 		p{ color: #fff; font-size:16px; text-align: center; margin:0;}
 	}
@@ -106,14 +109,50 @@ html, body {
 }
 
 .socialmedia{
-	margin: 40px; 
+	margin: 0px; 
+	display: inline-block;
 	text-align:center;
-	a{ margin: 15px;}
-	i{ font-size: 5rem; color: #777; margin: 10px}
+	width:100%;
+	a{ margin-right: 0px;}
+	i{ font-size: 4rem; color: #85C3BA; margin: 10px}
 	
-
-
 }
+
+.quotes{
+	text-align: center;
+    font-style: oblique;
+    font-size: 12px;
+    color: #aaa;
+    margin: 3rem 0;
+}
+
+
+.links{
+	ul{ 
+		padding: 5px 15px;
+		li{
+			list-style: none;
+			color: #fff;
+			float:left; 
+			width: auto;
+			margin: 0 15px;
+
+			a{
+				color: #fff;
+				font-size: 20px;
+				text-transform: uppercase;
+			}
+		}
+	}
+}
+
+.align-right{ text-align: right; }
+.align-center{ text-align: center; }
+.middle-link{ padding-left:5px;}
+.cp{ float:none !important; padding-top:10px;  }
+.row{ clear:both;}
+.margin{ margin: 1rem 0;}
+.contact{ padding:0;}
 
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */
@@ -129,7 +168,12 @@ html, body {
 		}
 	}
 
+	.cp{ float:right !important;     padding-top: 0;}
+
+
 	.hr-content{ display:none;}
+	h2{ color: #555; border-bottom: 1px solid #ddd; font-size: 30px; }
+
 
  }
 
@@ -143,4 +187,5 @@ html, body {
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) { 
 	.hr-content{ display:none;}
+
 }

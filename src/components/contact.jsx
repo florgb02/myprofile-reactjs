@@ -4,18 +4,18 @@ module.exports = React.createClass({
 
 	render: function(){
 		return <div className="col-xs-12 contact">
-	     	<h2>Ways to make contact</h2>
+	     	<hr />
 	     	<div className ="socialmedia">
-	     		<a target="_blank" onClick={this.handleOnClick}>
+	     		<a target="_blank" onClick={this.handleOnClick}  className="col-xs-3">
 		     		<i className="fa fa-envelope-o fa-3"></i>
 		     	</a>
-		     	<a href="https://github.com/florgb02" target="_blank">
+		     	<a href="https://github.com/florgb02" target="_blank"  className="col-xs-3">
 		     		<i className="fa fa-github fa-3"></i>
 		     	</a>
-				<a href="https://www.linkedin.com/in/flor-guzman-9b07b126" target="_blank">
+				<a href="https://www.linkedin.com/in/flor-guzman-9b07b126" target="_blank" className="col-xs-3">
 		     		<i className="fa fa-linkedin fa-3"></i>
 		     	</a>
-		     	<a href="https://twitter.com/FlorGuzmanb" target="_blank">
+		     	<a href="https://twitter.com/FlorGuzmanb" target="_blank"  className="col-xs-3">
 		     		<i className="fa fa-twitter fa-3"></i>
 				</a>
 			</div>

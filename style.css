@@ -39,6 +39,9 @@ html, body {
   height: auto !important;
   margin: 0 auto; }
 
+.image-settings {
+  width: 45%; }
+
 .navbar-default {
   background: #A3D1CA !important; }
   .navbar-default .navbar-brand {
@@ -65,14 +68,16 @@ html, body {
 .hr-content {
   display: inline-block; }
 
+.container {
+  width: 100%; }
+
 .container-main .left-container img {
   width: 100%;
   max-width: 250px;
   float: none; }
 
 .container-main .right-container {
-  border-left: none;
-  height: 96%; }
+  border-left: none; }
   .container-main .right-container ul.skills-list li {
     width: 50%;
     float: left;
@@ -85,14 +90,18 @@ html, body {
     margin: 1rem; }
     .container-main .right-container .thumbnail img {
       max-width: 200px;
+      min-width: 190px;
       height: 62px; }
 
 .container-main h1 {
-  font-size: 30px; }
+  font-size: 45px;
+  font-family: cursive; }
 
 .container-main h2 {
-  color: #555;
-  border-bottom: 1px solid #ddd; }
+  color: #777;
+  border-bottom: 1px solid #ddd;
+  font-size: 28px;
+  font-family: cursive; }
 
 .container-main h3 {
   font-size: 20px;
@@ -107,7 +116,8 @@ html, body {
   font-size: 18px;
   color: #999;
   text-transform: uppercase;
-  margin-bottom: 15px; }
+  margin-bottom: 15px;
+  font-family: monospace; }
 
 .container-main .rm-padding {
   padding-left: 0 !important;
@@ -119,10 +129,11 @@ html, body {
   z-index: 999; }
 
 .footer {
-  height: 3em;
+  height: auto;
   clear: both;
   background: #A3D1CA;
-  padding: 10px; }
+  padding: 10px;
+  margin-top: 2rem; }
   .footer p {
     color: #fff;
     font-size: 16px;
@@ -140,14 +151,58 @@ html, body {
   width: 100%; }
 
 .socialmedia {
-  margin: 40px;
-  text-align: center; }
+  margin: 0px;
+  display: inline-block;
+  text-align: center;
+  width: 100%; }
   .socialmedia a {
-    margin: 15px; }
+    margin-right: 0px; }
   .socialmedia i {
-    font-size: 5rem;
-    color: #777;
+    font-size: 4rem;
+    color: #85C3BA;
     margin: 10px; }
+
+.quotes {
+  text-align: center;
+  font-style: oblique;
+  font-size: 12px;
+  color: #aaa;
+  margin: 3rem 0; }
+
+.links ul {
+  padding: 5px 15px; }
+  .links ul li {
+    list-style: none;
+    color: #fff;
+    float: left;
+    width: auto;
+    margin: 0 15px; }
+    .links ul li a {
+      color: #fff;
+      font-size: 20px;
+      text-transform: uppercase; }
+
+.align-right {
+  text-align: right; }
+
+.align-center {
+  text-align: center; }
+
+.middle-link {
+  padding-left: 5px; }
+
+.cp {
+  float: none !important;
+  padding-top: 10px; }
+
+.row {
+  clear: both; }
+
+.margin {
+  margin: 1rem 0; }
+
+.contact {
+  padding: 0; }
 
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */
@@ -157,8 +212,15 @@ html, body {
     border-left: 1px solid #ddd; }
     .container-main .right-container ul.skills-list li {
       width: 33%; }
+  .cp {
+    float: right !important;
+    padding-top: 0; }
   .hr-content {
-    display: none; } }
+    display: none; }
+  h2 {
+    color: #555;
+    border-bottom: 1px solid #ddd;
+    font-size: 30px; } }
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
